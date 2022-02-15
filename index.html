@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  text-align: justify;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  position: relative;
+  margin-top: 5%;
+  width: auto;
+  font-size: 20px;
+}
+
+h2 {
+	background-color: #4AD1D5;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	color: white;
+}
+
+.header {
+  text-align: center;
+}
+
+.row {
+  padding-left: 20%;
+  padding-top: 4%;
+  padding-bottom: 7%;
+}
+
+.row a {
+  float: left;
+  display: block;
+  text-align: center;
+  width: 15%;
+}
+
+#navbar {
+  position: sticky;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0.1vh 3vh 0 rgba(0, 0, 0, 0.2);
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #4B4B4B;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  width: 12%;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #97e5e7;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #4AD1D5;
+  color: white;
+}
+
+.content {
+  padding-top: 6vh;
+  padding-left: 6%;
+  padding-right: 10%;
+  font-size: 20px;
+}
+
+.sidenav {
+  width: 8%;
+  position: sticky;
+  float: right;
+  top: 40%;
+  background: white;
+  padding: 2vh 0;
+  box-shadow: 0 1vh 2vh 0 rgba(0, 0, 0, 0.2);
+}
+
+.sidenav a {
+  padding: 1vh 0px 1vh 2vh;
+  text-decoration: none;
+  font-size: 3vh;
+  color: #4B4B4B;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #97e5e7;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 0px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 2%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 1% 1% 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 1% 0 0 1%;
+}
+
+.prev {
+  left: 0;
+  border-radius: 1% 0 0 1%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+  <img src="oda.png" style="object-fit: fill; 
+        width: 100%;
+        height: 90vh;">
+</div>
+
+<div class="mySlides fade">
+  <img src="parkur.jpg" style="object-fit: fill; 
+        width: 100%;
+        height: 90vh;">
+		</div>
+
+<div class="mySlides fade">
+  <img src="logo korzo.png" style="object-fit: fill; 
+        width: 100%;
+        height: 90vh;">
+		</div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+
+
+<div id="navbar">
+  <a href="file:Korzo_aktuality.html">Aktuality</a>
+  <a href="javascript:void(0)">Tanec</a>
+  <a class="active" href="javascript:void(0)">Parkour</a>
+  <a href="javascript:void(0)">E-shop</a>
+  <a href="javascript:void(0)">Kontakty</a>
+  <img src="logo korzo.png" alt="Logo" align="right"
+  style="object-fit: cover;
+		align: right; 
+		width: auto; 
+		height: 6vh;
+		padding-top: 2vh;
+		padding-right: 6vh;
+		">
+</div>
+
+<div class="sidenav">
+  <a href="#treneri">Tréneri</a>
+  <a href="#hala">Hala</a>
+  <a href="#">Kempy</a>
+</div>
+
+
+<div class="content">
+  <div id="treneri"></div>
+  
+  <h2 align="center" style="background-color: #4AD1D5; padding-top: 3vh;">Naši tréneri</h2>
+  
+  <h4 style="font-size: 25px; text-align: left; padding-left: 20%;">Filip Balek</h4>
+  <img src="parkur.jpg" alt="Filip Balek" style="float: right; width: 40%; top-padding: 2vh; padding-left: 3vh"/>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <h4 style="font-size: 25px; text-align: left; padding-left: 65%; padding-top: 5vh;">Šimon Holíček</h4>
+  
+  <img src="parkur.jpg" alt="Šimon Holíček" style="float: left; width: 40%; top-padding: 4vh; padding-right: 3vh"/>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p style="padding-bottom:5vh;">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+  <div id="hala" ></div>
+
+  <hr style="color:qray; width: 90%; height:0.1vh; background-color: black;">
+  
+  <div id="space" style="padding: 3vh"></div>
+  
+  <h2 align="center">Parkourová hala</h2>
+
+   <img src="hala_.webp" alt="Hala1" style="float: left;
+   object-fit: scale-down;
+   height: 65vh;"/>
+
+   <img src="https://visit.trencin.sk/wp-content/uploads/2017/12/gymn.jpg" alt="Hala2" style="
+   object-fit: scale-down;
+   height: 65vh;"/>
+   
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+var slideIndex = 0;
+showSlides();
+var slides,dots;
+
+function showSlides() {
+    var i;
+    slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 4000); // speed of slideshow
+}
+
+function plusSlides(position) {
+    slideIndex +=position;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    else if(slideIndex<1){slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";  
+}
+
+function currentSlide(index) {
+    if (index> slides.length) {index = 1}
+    else if(index<1){index = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slides[index-1].style.display = "block";  }
+</script>
+
+
+</body>
+<footer>
+	<hr style="color:gray; width: 85%; height:0.1vh; background-color: black;">
+	  <div class="row">
+			<a href="www.instagram.com"><img src="instagram.png" alt="Instagram" style="width:5vh;"></a>
+		
+			<a href="www.facebook.com"><img src="facebook.png" alt="Facebook" style="width:5vh;"></a>
+		
+			<a href="www.youtube.com"><img src="youtube.png" alt="Youtube" style="width:5vh;"></a>
+			
+			<a href="www.gmail.com"><img src="email.png" alt="Gmail" style="width:5vh;"></a>
+			
+			<a href="dial"><img src="mobil.png" alt="Číslo" style="width:5vh;"></a>
+	  </div>
+</footer>
+</html>
